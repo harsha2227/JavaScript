@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Form</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center; /* Horizontal center */
+            align-items: center;    /* Vertical center */
+            background-color: #f0f0f0; /* Optional: nice background */
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Space between inputs */
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: rgb(114, 172, 114);
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <input type="text" name="username" id="username" placeholder="Username">
+        <input type="text" name="mob" id="mob" placeholder="Mobile Number">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
+        <button onclick="handleRegister()">Submit</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+</html>
